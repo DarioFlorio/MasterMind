@@ -1,0 +1,72 @@
+"""
+skills/web_search.py — Web search skill using DuckDuckGo (no API key needed).
+
+Drop this in skills/ and the agent gains web search capability automatically.
+Requires: pip install duckduckgo-search
+"""
+from __future__ import annotations
+
+try:
+    from duckduckgo_search import DDGS
+    _AVAILABLE = True
+except ImportError:
+    _AVAILABLE = False
+
+from tools.base_tool import BaseTool, ToolResult
+
+
+class WebSearchSkill(BaseTool):
+    name        = "web_search"
+    description = (
+        "Search the web for current information, news, documentation, "
+        "or anything you don't know. Returns titles, URLs, and snippets."
+    )
+    input_schema = {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "What to search for.",
+            },
+            "max_results": {
+                "type": "integer",
+                "description": "Number of results to return (default 5).",
+            },
+        },
+        "required": ["query"],
+    }
+
+    def execute(self, input_data: dict) -> ToolResult:   # renamed from `input` (shadowed builtin)
+        if not _AVAILABLE:
+            return ToolResult(
+                output=(
+                    "web_search skill requires: pip install duckduckgo-search\n"
+                    "Run that command then restart the agent."
+                ),
+                is_error=True,
+            )
+
+        query = input_data.get("query", "").strip()
+        if not query:
+            return ToolResult(output="query is required", is_error=True)
+
+        max_results = int(input_data.get("max_results", 5))
+
+        try:
+            with DDGS() as ddgs:
+                results = list(ddgs.text(query, max_results=max_results))
+
+            if not results:
+                return ToolResult(output=f"No results found for: {query}")
+
+            lines = [f"Search results for: {query}\n"]
+            for i, r in enumerate(results, 1):
+                lines.append(f"{i}. {r.get('title', 'No title')}")
+                lines.append(f"   {r.get('href', '')}")
+                lines.append(f"   {r.get('body', '')[:200]}")
+                lines.append("")
+
+            return ToolResult(output="\n".join(lines))
+
+        except Exception as exc:
+            return ToolResult(output=f"Search failed: {exc}", is_error=True)
