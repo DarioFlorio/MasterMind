@@ -1,4 +1,4 @@
-EVE — Persistent Agent Harness
+MasterMind — Persistent Agent Harness
 Local-first, fully autonomous AI agent with hybrid memory, 51 reasoning skills,
 50+ built‑in tools, and WhatsApp integration. Runs on Windows, macOS, and Linux
 – no cloud required.
@@ -15,7 +15,7 @@ Hybrid memory – full‑text search + vector embeddings + automatic
 dreaming, curation, and idle consolidation.
 
 WhatsApp via Baileys – no Twilio, no paid accounts. Scan a QR code once
-and chat with EVE from your phone.
+and chat with MasterMind from your phone.
 
 Plan mode – propose steps before execution, then run with approval gating.
 
@@ -23,7 +23,7 @@ Multi‑agent swarms – spawn sub‑agents in‑process or via tmux.
 
 Prose workflows – .prose scripting engine for complex pipelines.
 
-Hook system – register pre/post hooks on any event.
+Hook system – register pre/post hooks on any MasterMindnt.
 
 Plugin marketplace – install community plugins.
 
@@ -38,8 +38,8 @@ Streaming, reasoning display, token usage tracking, telemetry.
 Clone the repository
 
 text
-git clone https://github.com/yourusername/eve.git
-cd eve
+git clone https://github.com/yourusername/MasterMind.git
+cd MasterMind
 Python 3.10+ and Node.js 18+ (for WhatsApp) required.
 
 Install Python dependencies
@@ -77,7 +77,7 @@ PERMISSION_MODE	auto	auto, ask, or deny.
 N_THREADS	physical cores	CPU threads for generation.
 N_GPU_LAYERS	-1 (auto)	GPU layers (0 = CPU only).
 KV_CACHE_TYPE	8	KV cache quantization (8=q8_0).
-USE_MLOCK	1	Lock memory to prevent swapping.
+USE_MLOCK	1	Lock memory to prMasterMindnt swapping.
 MMPROJ_PATH	(empty)	Path to mmproj for vision.
 DRAFT_MODEL_PATH	(empty)	Path to a draft model for speculative decoding (optional).
 See config/settings.py for the full list and advanced tuning options.
@@ -90,12 +90,12 @@ Slash commands – type /help to see all built‑in commands (/clear,
 /whatsapp, /voice, etc.).
 
 WhatsApp – type /whatsapp to start the bridge; scan the QR code with
-WhatsApp → Linked Devices. Then send messages to EVE directly from your phone.
+WhatsApp → Linked Devices. Then send messages to MasterMind directly from your phone.
 
 Voice – type /voice to toggle microphone input (speech‑to‑text).
 
 🧠 Reasoning Skills
-EVE comes with 51 reasoning skills that can be invoked via the skill tool
+MasterMind comes with 51 reasoning skills that can be invoked via the skill tool
 or automatically chosen by the engine. They include:
 
 Skill	Description
@@ -116,12 +116,12 @@ multi_objective_future_optimization	Robust strategies across multiple futures.
 epistemic_reason	Evaluate evidence quality, knowledge vs belief.
 epistemic_future_reasoning	Predict how knowledge and beliefs will evolve.
 bayes_reason	Bayesian inference, base rates, conditional probability.
-probabilistic_forecasting	Calibrated probability estimates for future events.
+probabilistic_forecasting	Calibrated probability estimates for future MasterMindnts.
 constraint_solve	Logic puzzles, CSP, zebra riddles, knight/knave.
 game_solve	Minimax, Nash equilibrium, optimal game strategy.
 game_theoretic_forward_simulation	Predict moves and counter‑moves.
 analogical_reason	Structural mapping between domains, analogies.
-timeline_reason	Order events, detect conflicts, schedule dependencies.
+timeline_reason	Order MasterMindnts, detect conflicts, schedule dependencies.
 timeline_projection_reason	Project milestones and future sequences.
 recursive_decompose	Break big problems into sub‑problems recursively.
 recursive_future_decomposition	Break complex forecasts into sub‑forecasts.
@@ -143,7 +143,7 @@ Additional skills cover sentiment, emotional tone, priority, summary,
 self‑critique, reflection, and context‑aware adaptation.
 
 🛠️ Tools
-EVE ships with over 50 built‑in tools, organised by category.
+MasterMind ships with over 50 built‑in tools, organised by category.
 
 Shell & Execution
 bash – Run Bash/shell commands (use command parameter).
@@ -181,7 +181,7 @@ web_fetch – Fetch and extract text from a URL.
 Memory & Knowledge
 memory_write – Store a memory with a key.
 
-memory_read – Retrieve memories by query.
+memory_read – RetriMasterMind memories by query.
 
 memory_search – Full‑text + vector search across session and past conversations.
 
@@ -193,7 +193,7 @@ reflect – Trigger reflection/self‑critique.
 
 wiki_write – Save a note to the knowledge base (inbox/notes/reference).
 
-wiki_read – Retrieve a wiki note by title.
+wiki_read – RetriMasterMind a wiki note by title.
 
 wiki_search – Full‑text search the wiki.
 
@@ -289,7 +289,7 @@ Replies are mirrored to the terminal when "WhatsApp mode" is active.
 MCP (Model Context Protocol)
 Register external MCP servers with /mcp add NAME URL.
 
-EVE can invoke their tools via mcp_invoke and list them with /mcp.
+MasterMind can invoke their tools via mcp_invoke and list them with /mcp.
 
 Supports any MCP‑compatible tool provider.
 
@@ -308,7 +308,7 @@ Enables remote access to the agent, multi‑client sessions, and integration wit
 Git Worktrees
 Parallel branches can be checked out into separate worktrees.
 
-EVE can work on multiple branches simultaneously with full tool access.
+MasterMind can work on multiple branches simultaneously with full tool access.
 
 Cron & Task Lifecycle
 Schedule recurring tasks with cron_create.
@@ -322,7 +322,7 @@ Plugins are self‑contained folders placed in ~/.mastermind/plugins/.
 
 📁 Project Structure
 text
-eve/
+MasterMind/
 ├── main.py                 # Entry point, REPL, server launcher
 ├── agent/                  # Core agent loop, session, goal tracker
 ├── tools/                  # All tools (bash, file, web, memory, LSP, cron…)
@@ -334,7 +334,7 @@ eve/
 ├── node_modules/           # (auto‑installed WhatsApp deps)
 └── .env                    # Your personal configuration
 ⚡ Performance
-EVE ships with sensible defaults that keep inference fast without altering model quality:
+MasterMind ships with sensible defaults that keep inference fast without altering model quality:
 
 KV cache q8_0 (double effective context)
 
@@ -356,11 +356,11 @@ Hybrid memory – keyword + vector search across past conversations.
 
 Auto‑dreaming – consolidates memories when idle.
 
-Session resume – if EVE crashes, next launch detects the interruption and
+Session resume – if MasterMind crashes, next launch detects the interruption and
 injects the previous goal back into context, so it can pick up exactly where
 it left off.
 
-🔌 Extending EVE
+🔌 Extending MasterMind
 Plugins – drop folders into ~/.mastermind/plugins/ or install from
 marketplace with /plugin install.
 
