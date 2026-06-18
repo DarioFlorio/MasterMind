@@ -1,0 +1,17 @@
+{
+  "powershell:powershell": {
+    "wins": 1,
+    "attempts": 1,
+    "last_win": 1780248432.886016
+  },
+  "write_file:write_file": {
+    "wins": 1,
+    "attempts": 1,
+    "last_win": 1780248564.385858
+  },
+  "send_message:send_message": {
+    "wins": 1,
+    "attempts": 1,
+    "last_win": 1780248587.131539
+  }
+}

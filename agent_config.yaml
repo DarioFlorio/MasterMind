@@ -1,0 +1,14 @@
+model:
+  name: "phi:q4f16_1m"
+  type: "llama-cpp"
+  context_window: 4096
+  max_tokens: 2048
+
+hardware:
+  cpu_only: true
+  ram_limit_gb: 8
+
+features:
+  memory_persistence: true
+  chat_history: true
+  system_memory: true

@@ -1,0 +1,18 @@
+{
+  "session_id": "94718544",
+  "created_at": 1781801860.3470666,
+  "last_active": 1781801860.4248946,
+  "summary": "",
+  "messages": [
+    {
+      "role": "user",
+      "content": "[SYSTEM RESUME] \u26a1 Power cut / hard kill detected \u2014 previous session had no clean exit\n  Last recorded event: [power_cut] Power cut / hard kill detected \u2014 previous session had no clean exit @ 2026-06-18T16:27:16Z\nInterrupted goal: <chain_of_thought>\n  <phasic_signals>\n    - [task_1780242662_summary]: {\n    \"goal\": \"Send Italian Moka Pot comparison report to darioflorio.net@gmail.com\",\n    \"method\": \"Outlook MAPI (automated PowerShell script)\",\n    \"status\n  </phasic_signals>\n  <tonic_background>\n    [TONIC:background_context] ## Remembered Facts\n  </tonic_background>\n  <offset_signals>\n    (nothing has disappeared)\n  </offset_signals>\n  <affective_state>curiosity=0.28 urgency=0.02 fatigue=0.003 satisfaction=0.52 | stable, no strong affect</affective_state>\n  <deliberation>REQUIRED \u2014 reason step by step before responding</deliberation>\n</chain_of_thought>\n\nhello\nSession history has been restored. Pick up exactly where you left off \u2014 review the last tool results above and continue the task without asking the user to repeat themselves.",
+      "ts": 1781801860.4247818
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. Resuming: <chain_of_thought>\n  <phasic_signals>\n    - [task_1780242662_summary]: {\n    \"goal\": \"Send Italian Moka Pot comparison r. Continuing now.",
+      "ts": 1781801860.4248435
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "session_id": "8b66af07",
+  "created_at": 1780320955.1782527,
+  "last_active": 1780321090.840815,
+  "summary": "",
+  "messages": [
+    {
+      "role": "user",
+      "content": "[Memory recall request]\n<chain_of_thought>\n  <phasic_signals>\n    - [task_1780242662_summary]: {\n    \"goal\": \"Send Italian Moka Pot comparison report to darioflorio.net@gmail.com\",\n    \"method\": \"Outlook MAPI (automated PowerShell script)\",\n    \"status\n  </phasic_signals>\n  <tonic_background>\n    [TONIC:new_memory] ## Remembered Facts\n    [TONIC:cwd] C:\\Users\\dario\\OneDrive\\Documenten\\Mind_EVE\n    [TONIC:model] auto\n    [TONIC:perm_mode] auto\n  </tonic_background>\n  <offset_signals>\n    (nothing has disappeared)\n  </offset_signals>\n  <affective_state>curiosity=0.28 urgency=0.02 fatigue=0.003 satisfaction=0.52 | stable, no strong affect</affective_state>\n  <deliberation>REQUIRED \u2014 reason step by step before responding</deliberation>\n</chain_of_thought>\n\n[GOAL t0] send me a message on whatsapp saying good morning dario, I hope you have a good  \u2014 do NOT stop until complete.\ntext me hello world on whatsapp\n\n[Retrieved memory context]\n[hybrid|score=0.42] fact:last_completed_task\n[last_completed_task] {\n  \"task_id\": \"1780242662\",\n  \"description\": \"Send Italian Moka Pot comparison report to darioflorio.net@gmail.com\",\n  \"status\": \"completed\",\n  \"timestamp\": \"2026-05-31T18:35:00Z\",\n  \"method\": \"Outlook MAPI (PowerShell)\",\n  \"documentation\": \"C:/Users/dario/OneDrive/Documenten/\n\n---\n[hybrid|score=0.38] fact:task_1780242662_summary\n[task_1780242662_summary] {\n  \"goal\": \"Send Italian Moka Pot comparison report to darioflorio.net@gmail.com\",\n  \"method\": \"Outlook MAPI (automated PowerShell script)\",\n  \"status\": \"completed\",\n  \"timestamp\": \"2026-05-31T18:30:00Z\",\n  \"attachment\": \"italian_moka_pot_comparison_2026.md\",\n  \"lessons\": ",
+      "ts": 1780321042.29921
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "ts": 1780321090.8407981
+    }
+  ]
+}

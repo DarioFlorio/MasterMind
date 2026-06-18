@@ -1,0 +1,11 @@
+{
+  "name": "eve-wa-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.0",
+    "@hapi/boom": "^10.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.0.0"
+  }
+}

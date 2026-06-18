@@ -1,0 +1,108 @@
+{
+  "failures": {
+    "send_message": [
+      "{\"attachments\": [{\"name\": \"italian_moka_pot_comparison_2026.md\", \"path\": \"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/italian_moka_pot_comparison_2026.md\"}], \"body\": \"Hi Dario,\\n\\nAttached is the: No message provided."
+    ],
+    "powershell": [
+      "{\"command\": \"# Use Windows' built-in mail client to send the email with attachment\\n$Outlook = New-Object -ComObject Outlook.Application\\n$Mail = $Outlook.CreateItem(0)\\n$Mail.To = \\\"darioflorio.net@g: PowerShell timed out after 60s. Use a shorter command or increase the timeout parameter.",
+      "{\"command\": \"# Check if the script exists and run it with placeholder credentials (user will input real ones)\\n$ScriptPath = \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/send_email_gmail.ps1\\\"\\n: [exit 1]\nStarting email script. You will be prompted for Gmail credentials (app password if 2FA is enabled).\nIf you prefer OAuth2 or another method, l",
+      "{\"command\": \"# Execute the fixed PowerShell script to send the email\\n$ScriptPath = \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/send_email_gmail_fixed.ps1\\\"\\n$AttachmentPath = \\\"C:/Users/dario/: [exit 1]\nStarting email script. You will be prompted for Gmail credentials (app password if 2FA is enabled).\n[stderr]\nC:\\Users\\dario\\OneDrive\\Document",
+      "{\"command\": \"# Execute the fixed script with splatting to avoid parameter errors\\ncd \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp\\\"\\n$Params = @{\\n    From        = \\\"eve@mind-eve.local\\\"  # Pla: [exit 1]\nRunning script with the following parameters:\n\nName       Value                                                                              ",
+      "{\"command\": \"# Delete saved credentials (if any) and retry the script\\nRemove-Item \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/gmail_creds.xml\\\" -ErrorAction SilentlyContinue\\n\\ncd \\\"C:/Users/d: [exit 1]\nYou will now be prompted for your Gmail credentials (app password if 2FA is enabled).\nIf the script fails, check:\n1. 'Less secure app access'",
+      "{\"command\": \"# Execute the Outlook script (no SMTP required)\\ncd \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp\\\"\\n$AttachmentPath = \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/italian_moka: [exit 1]\nOpening Outlook to send the email. Review and click 'Send'.\n[stderr]\nC:\\Users\\dario\\OneDrive\\Documenten\\Mind_EVE\\temp\\send_email_via_outlook.",
+      "{\"command\": \"# Execute the Outlook script with splatting (fixed parameter passing)\\ncd \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp\\\"\\n$Params = @{\\n    To          = \\\"darioflorio.net@gmail.com: PowerShell timed out after 60s. Use a shorter command or increase the timeout parameter."
+    ],
+    "edit_file": [
+      "{\"content\": \"# PowerShell Script to Send Email via Gmail with Attachment (2026)\\n# Usage: .\\\\send_email_gmail.ps1 -From \\\"your@gmail.com\\\" -To \\\"recipient@example.com\\\" -Subject \\\"Test\\\" -Body \\\"Body : old_str is required."
+    ],
+    "write_file": [
+      "{\"raw\": \"{\\n  \\\"path\\\": \\\"C:/Users/dario/OneDrive/Documenten/Mind_EVE/temp/context_offload/task_1780242662_part009.md\\\",\\n  \\\"content\\\": \\\"# Final Solution: Outlook Email (Task 1780242662)\\\\n\\\\n## Roo: No path provided."
+    ],
+    "brief": [
+      "{\"message\": \"Task complete. The email with the **Italian Moka Pot Comparison 2026** report was sent automatically via Outlook to `darioflorio.net@gmail.com`. No further action is needed.\\n\\nKey detail: path is required"
+    ],
+    "task_stop": [
+      "{\"message\": \"Email sent successfully via Outlook. No further action required.\", \"status\": \"completed\", \"task_id\": \"1780242662\"}: Task '' not found"
+    ]
+  },
+  "frequency": {
+    "send_message:{\"attachments\": [{\"name\": \"italian_moka_pot_comparison_2026.": {
+      "count": 1,
+      "first_seen": 1780246004.8950155,
+      "last_seen": 1780246004.8951678,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Use Windows' built-in mail client to send the": {
+      "count": 1,
+      "first_seen": 1780246438.3841028,
+      "last_seen": 1780246438.3841062,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Check if the script exists and run it with pl": {
+      "count": 1,
+      "first_seen": 1780247651.7942076,
+      "last_seen": 1780247651.794211,
+      "fixed_by": ""
+    },
+    "edit_file:{\"content\": \"# PowerShell Script to Send Email via Gmail wit": {
+      "count": 1,
+      "first_seen": 1780247708.820004,
+      "last_seen": 1780247708.820007,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Execute the fixed PowerShell script to send t": {
+      "count": 1,
+      "first_seen": 1780247791.4922838,
+      "last_seen": 1780247791.492287,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Execute the fixed script with splatting to av": {
+      "count": 1,
+      "first_seen": 1780247899.1477332,
+      "last_seen": 1780247899.1477358,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Delete saved credentials (if any) and retry t": {
+      "count": 1,
+      "first_seen": 1780248088.457376,
+      "last_seen": 1780248088.4573784,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Execute the Outlook script (no SMTP required)": {
+      "count": 1,
+      "first_seen": 1780248231.7217956,
+      "last_seen": 1780248231.7217982,
+      "fixed_by": ""
+    },
+    "write_file:{\"raw\": \"{\\n  \\\"path\\\": \\\"C:/Users/dario/OneDrive/Documenten": {
+      "count": 1,
+      "first_seen": 1780248259.987832,
+      "last_seen": 1780248259.9878354,
+      "fixed_by": ""
+    },
+    "powershell:{\"command\": \"# Execute the Outlook script with splatting (fi": {
+      "count": 1,
+      "first_seen": 1780248345.751315,
+      "last_seen": 1780248345.7513177,
+      "fixed_by": ""
+    },
+    "brief:{\"message\": \"Task complete. The email with the **Italian Mok": {
+      "count": 1,
+      "first_seen": 1780248537.365394,
+      "last_seen": 1780248537.3653996,
+      "fixed_by": ""
+    },
+    "task_stop:{\"message\": \"Email sent successfully via Outlook. No further": {
+      "count": 1,
+      "first_seen": 1780248631.6580114,
+      "last_seen": 1780248631.6580133,
+      "fixed_by": ""
+    }
+  },
+  "fixes": {
+    "powershell:{}": "retry succeeded",
+    "write_file:{}": "retry succeeded",
+    "send_message:{}": "retry succeeded"
+  },
+  "updated": "2026-05-31 18:30:31"
+}

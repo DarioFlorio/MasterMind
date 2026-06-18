@@ -1,0 +1,7 @@
+{
+  "goal": "<chain_of_thought>\n  <phasic_signals>\n    [PHASIC:WORKING] [working] <chain_of_thought>\n    <phasic_signals>\n    - [task_1780242662_summary]: {\n    \"goal\": \"Send Italian Moka Pot comparison report to darioflorio.net@gmail.com\",\n    \"method\": \"Outlook MAPI (automated PowerShell script)\",\n    \"status\n    </phasic_signals>\n    <tonic_background>\n  </phasic_signals>\n  <tonic_background>\n    [TONIC:backgroun\n  </tonic_background>\n  <offset_signals>\n    (nothing has disappeared)\n  </offset_signals>\n  <affective_state>curiosity=0.24 urgency=0.0 fatigue=0.009 satisfaction=0.56 | stable, no strong affect</affective_state>\n  <deliberation>REQUIRED \u2014 reason step by step before responding</deliberation>\n</chain_of_thought>\n\nwhat time is it?",
+  "steps": [],
+  "turn_count": 0,
+  "start_ts": 1781803410.246983,
+  "completed": false
+}

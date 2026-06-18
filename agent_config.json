@@ -1,0 +1,12 @@
+{
+  "user_preferences": {},
+  "session_history": [
+    {
+      "timestamp": "2026-06-18T12:28:58.977873",
+      "user_id": "default",
+      "message": "hi",
+      "response": "Hi! How can I assist you today?\n\n<think>\n\n</think>\n\nHello! How can I help you?"
+    }
+  ],
+  "system_facts": {}
+}
